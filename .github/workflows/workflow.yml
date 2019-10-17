@@ -19,24 +19,24 @@ jobs:
         sudo apt update
         sudo apt install inxi
 
-    - name: OS info
-      run: cat /etc/*relea*
+#     - name: OS info
+#       run: cat /etc/*relea*
         
-    - name: Check sudo
-      run: |
-        set -x
-        sudo whoami
-        sudo parted -l | grep /dev/sd -B1 -A2
+#     - name: Check sudo
+#       run: |
+#         set -x
+#         sudo whoami
+#         sudo parted -l | grep /dev/sd -B1 -A2
         
     - name: process info
       run: |
         ps aux                  
 
-    - name: test docker 
-      run: |
-        set -x
-        docker ps
-        docker run hello-world
+#     - name: test docker 
+#       run: |
+#         set -x
+#         docker ps
+#         docker run hello-world
     
     - name: nework test
       run: |
@@ -45,7 +45,6 @@ jobs:
         which python
         curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
         ipconfig
-        ip -a
         ping -t 7 tut.by
 
     - name: Run a hardware info
