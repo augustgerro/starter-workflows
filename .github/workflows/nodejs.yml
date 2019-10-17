@@ -23,5 +23,5 @@ jobs:
         HOST: ${{ secrets.HOST }}
         USER: root
       with:
-        args: cat /etc/*relea*
-#         args: uptime
+#         args: cat /etc/*relea*
+        args: uptime
