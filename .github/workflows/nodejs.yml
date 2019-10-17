@@ -21,7 +21,7 @@ jobs:
       env:
         PRIVATE_KEY: ${{ secrets.KEY }}
         HOST: ${{ secrets.HOST }}
-        USER: ${{ secrets.USER }}
+        USER: root
       with:
         args: cat /etc/*relea*
 #         args: uptime
