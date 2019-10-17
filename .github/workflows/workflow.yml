@@ -44,7 +44,7 @@ jobs:
         curl ifconfig.co
         which python
         curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-        ipconfig
+        ifconfig
         ping -t 7 tut.by
 
     - name: Run a hardware info
